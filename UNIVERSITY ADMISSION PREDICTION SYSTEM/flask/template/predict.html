@@ -1,0 +1,72 @@
+<html>
+    <head>
+       <meta charset="UTF-8">
+       <title>predict</title>
+       <style>
+         body
+        {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR88CXI4oh6837PC33czmt9Nl4S6vYoQZKQGiP4iJo3Cg&usqp=CAU&ec=48665701");
+            background-color: cover;
+        }
+        h3.big
+        {
+            line-height: 1.8;
+        }
+       </style>
+</head>
+<body>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 bg-light text-right">
+                <a href="/home" class="btn btn-primary disabled btn-lg">Home</a>
+                <a href="/predict" class="btn btn-primary disabled btn-lg">Predict</a>
+            </div>
+        </div>
+        <br>
+        <h1><strong>UNIVERSITY ADMISSION PREDICTION SYSTEM</strong></h1><br>
+         <h3 class="big"><em>Enter your details and get probadlity of your admission</em></h3>
+        <h4>
+            <form action="/pred", method="post">
+                <lable for="Enter GRE Score">Enter GRE Score</lable>              
+                <input type="text" id="Enter GRE Score" name="Enter GRE Score"><br><br>
+                <lable for="Enter TOFEL Score">Enter TOFEL Score</lable>
+                <input type="text" id="Enter TOFEL Score" name="Enter TOFEL Score"><br><br>
+ <div data-role="main" class="ui-content">
+    <form method="post" action="/action_page_post.php">
+      <fieldset data-role="controlgroup">
+      <legend>Select University no:</legend>
+        <label for="1">1</label>
+        <input type="radio"  id="1" value="1" checked>
+        <label for="2">2</label>
+        <input type="radio"  id="2" value="2">
+        <label for="3">3</label>
+        <input type="radio"  id="3" value="3" checked>
+        <label for="4">4</label>
+        <input type="radio"  id="4" value="4">
+        <label for="5">5</label>
+        <input type="radio"  id="5" value="5">
+      </fieldset>
+
+                <lable for="Enter SOP">Enter SOP</lable>
+                <input type="text" id="Enter SOP" name="Enter SOP"><br><br>
+                <lable for="Enter LOR">Enter LOR</lable>
+                <input type="text" id="Enter LOR" name="Enter LOR"><br><br>
+                <lable for="Enter CGPA">Enter CGPA</lable>
+                <input type="text" id="Enter CGPA" name="Enter CGPA"><br><br>
+                </label>
+ <div data-role="main" class="ui-content">
+    <form method="post" action="/action_page_post.php">
+      <fieldset data-role="controlgroup">
+      <legend>Research:</legend>
+        <label for="Research"></label>
+        <input type="radio" name="Research" id="Research" value="Research" checked>
+        <label for="NO Research"></label>
+        <input type="radio" name="NO Research" id="NO Research" value="NO Research">
+      </fieldset>
+                <button type="predict" class="btn btn-success btn-lg">predict</button>
+            </form>
+        </h4>
+    </div>
+</body>           
+</html>
